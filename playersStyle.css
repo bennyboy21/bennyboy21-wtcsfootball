@@ -1,0 +1,1268 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+@media (max-width:500px) {
+    body {
+        background:rgb(29, 29, 29);
+        margin: 0;
+        padding: 0;
+    }
+    
+    #hole-Background {
+        background:rgb(29, 29, 29);
+        width:100vw;
+    }
+
+    #top-Bar {
+        background:none;
+        position: fixed;
+        top:0px;
+        height:50px;
+        width:100%;
+        transition: .5s;
+    }
+
+    #top-Bar.fadeTopBar {
+        background:rgb(20, 20, 20);
+        transition: .5s;
+    }
+
+    #trigger1 {
+        position:absolute;
+        top:52%;
+    }
+
+    #logo-Hider {
+        width:100%;
+        overflow: hidden;
+        animation: ShowLogo 1s forwards 0s ease-in-out;
+    }
+
+    @keyframes ShowLogo {
+        0% {
+            height:0px;
+        }
+
+        100% {
+            height:50px;
+        }
+    }
+
+    #Logo {
+        height:40px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    
+    #menu-Image {
+        width:34px;
+        height:34px;
+        position:absolute;
+        top:10px;
+        left:calc(100% - 50px);
+    }
+    
+    #menu-Page {
+        width:0vw;
+        height:150vh;
+        background:rgb(29, 29, 29);
+        position:fixed;
+        top:0px;
+        overflow: hidden;
+    }
+
+
+    @keyframes showMenuPage {
+        0% {
+            width: 0vw;
+            border-right: 0vw solid rgb(120, 162, 47);
+        }
+
+        50% {
+            width: 0vw;
+            left:0px;
+            border-right: 100vw solid rgb(120, 162, 47);
+        }
+
+        100% {
+            border-right: 0vw solid rgb(120, 162, 47);
+            width:100vw;
+        }
+    }
+
+    @keyframes closeMenuPage {
+        0% {
+            border-right: 0vw solid rgb(120, 162, 47);
+            width:100vw;
+        }
+
+        50% {
+            width: 0vw;
+            left:0px;
+            border-right: 100vw solid rgb(120, 162, 47);
+        }
+
+        100% {
+            width: 0vw;
+            border-right: 0vw solid rgb(120, 162, 47);
+        }
+    }
+
+    #close-Menu-Page {
+        color:white;
+        font-size: 50px;
+        transform: rotate(45deg);
+        position:absolute;
+        top:0px;
+        left:calc(100% - 50px);
+    }
+
+    #Players-Button-Holder {
+        width:100%;
+        height:50px;
+        text-align: center;
+        overflow: hidden;
+        position:relative;
+        margin-top: 50px;
+    }
+
+    #Players-Button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    @keyframes showPlayersButton {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes closePlayersButton {
+        0% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+
+    #Games-Button-Holder {
+        width:100%;
+        height:50px;
+        text-align: center;
+        overflow: hidden;
+        position:relative;
+        margin-top: 50px;
+    }
+
+    #Games-Button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    @keyframes showGamesButton {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes closeGamesButton {
+        0% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+    #Home-Button-Holder {
+        width:100%;
+        height:50px;
+        text-align: center;
+        overflow: hidden;
+        position:relative;
+        margin-top: 50px;
+    }
+
+    #Home-Button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    @keyframes showHomeButton {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes closeHomeButton {
+        0% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+    #Coaches-Button-Holder {
+        width:100%;
+        height:50px;
+        text-align: center;
+        overflow: hidden;
+        position:relative;
+        margin-top: 50px;
+    }
+
+    #Coaches-Button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    @keyframes showCoachesButton {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes closeCoachesButton {
+        0% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+    #instagram-Image-Holder {
+        position:relative;
+        height:60px;
+        width:100%;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+
+    #instagram-Image {
+        position:absolute;
+        width:60px;
+        top:calc(100% - 32px);
+        left:calc(50% - 30px);
+        margin-top: 60px;
+    }
+
+    @keyframes ShowInstagramLogo {
+        0% {
+            margin-top: 60px;
+        }
+        100% {
+            margin-top: -22px;
+        }
+    }
+
+    @keyframes closeInstagramLogo {
+        0% {
+            margin-top: -22px;
+        }
+
+        100% {
+            margin-top: 60px;
+        }
+    }
+
+    #change-Pages {
+        width:100vw;
+        height:0vh;
+        position:absolute;
+        top:0px;
+        background:rgb(29, 29, 29);
+    }
+
+    @keyframes openPage {
+        0% {
+            height: 0vh;
+            border-bottom: 0vh solid rgb(120, 162, 47);
+        }
+
+        50% {
+            height: 0vh;
+            left:0px;
+            border-bottom: 100vh solid rgb(120, 162, 47);
+        }
+
+        100% {
+            border-bottom: 0vh solid rgb(120, 162, 47);
+            height:100vw;
+        }
+    }
+
+    #Players-Text-Holder {
+        position:absolute;
+        top:65px;
+        width:100%;
+        height:45px;
+        overflow: hidden;
+    }
+
+    #Players-Text {
+        margin-left: 10px;
+        margin-top: 50px;
+        font-size: 45px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        animation: ShowPlayersText .75s forwards ease-in-out;
+    }
+
+    @keyframes ShowPlayersText {
+        0% {
+            margin-top: 50px;
+        }
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    #all-Players {
+        position:absolute;
+        font-family: 'Dongle', sans-serif;
+        font-size: 35px;
+        color: white;
+        margin-top: 20px;
+        text-decoration: 3px underline;
+        top:110px;
+        left:10px;
+    }
+
+    .Player-Name {
+        text-decoration: 3px underline;
+    }
+
+    #Player-One-Holder {
+        width:100%;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-One {
+        margin-top: 0px;
+        animation: ShowPlayerName 1s forwards ease-in-out;
+    }
+
+    @keyframes ShowPlayerName {
+        0% {
+            margin-top: 30px;
+        }
+
+        100% {
+            margin-top: -10px;
+        }
+    }
+
+    #Player-Two-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-Two {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards .1s ease-in-out;
+    }
+
+    #Player-Three-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-Three {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards .2s ease-in-out;
+    }
+
+    #Player-Four-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-Four {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards .3s ease-in-out;
+    }
+
+    #Player-Five-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-Five {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards .4s ease-in-out;
+    }
+
+    #Player-Six-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-Six {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards .5s ease-in-out;
+    }
+
+    #Player-Seven-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-Seven {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards .6s ease-in-out;
+    }
+
+    #Player-Eight-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-Eight {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards .7s ease-in-out;
+    }
+
+    #Player-Nine-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-Nine {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards .8s ease-in-out;
+    }
+
+    #Player-Ten-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-Ten {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards .9s ease-in-out;
+    }
+
+    #Player-Eleven-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-Eleven {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 1s ease-in-out;
+    }
+
+    #Player-12-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-12 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 1.1s ease-in-out;
+    }
+
+    #Player-13-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-13 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 1.2s ease-in-out;
+    }
+
+    #Player-14-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-14 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 1.3s ease-in-out;
+    }
+
+    #Player-15-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-15 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 1.4s ease-in-out;
+    }
+
+    #Player-16-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-16 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 1.5s ease-in-out;
+    }
+
+    #Player-17-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-17 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 1.6s ease-in-out;
+    }
+
+    #Player-18-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-18 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 1.7s ease-in-out;
+    }
+
+    #Player-19-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-19 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 1.8s ease-in-out;
+    }
+
+    #Player-20-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-20 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 1.9s ease-in-out;
+    }
+
+    #Player-21-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-21 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 2s ease-in-out;
+    }
+
+    #Player-22-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-22 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 2.1s ease-in-out;
+    }
+
+    #Player-23-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-23 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 2.2s ease-in-out;
+    }
+
+    #Player-24-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-24 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 2.3s ease-in-out;
+    }
+
+    #Player-25-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-25 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 2.4s ease-in-out;
+    }
+
+    #Player-26-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-26 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 2.5s ease-in-out;
+    }
+
+    #Player-27-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-27 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 2.6s ease-in-out;
+    }
+
+    #Player-28-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-28 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 2.7s ease-in-out;
+    }
+
+    #Player-29-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-29 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 2.8s ease-in-out;
+    }
+
+    #Player-30-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-30 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 2.9s ease-in-out;
+    }
+
+    #Player-31-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-31 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 3s ease-in-out;
+    }
+
+    #Player-32-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-32 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 3.1s ease-in-out;
+    }
+
+    #Player-33-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-33 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 3.2s ease-in-out;
+    }
+
+    #Player-34-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-34 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 3.3s ease-in-out;
+    }
+
+    #Player-35-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-35 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 3.4s ease-in-out;
+    }
+
+    #Player-36-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-36 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 3.5s ease-in-out;
+    }
+
+    #Player-37-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-37 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 3.6s ease-in-out;
+    }
+
+    #Player-38-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-38 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 3.7s ease-in-out;
+    }
+
+    #Player-39-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-39 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 3.8s ease-in-out;
+    }
+
+    #Player-40-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-40 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 3.9s ease-in-out;
+    }
+
+    #Player-41-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-41 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 4s ease-in-out;
+    }
+
+    #Player-42-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-42 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 4.1s ease-in-out;
+    }
+
+    #Player-43-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-43 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 4.2s ease-in-out;
+    }
+
+    #Player-44-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-44 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 4.3s ease-in-out;
+    }
+
+    #Player-45-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-45 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 4.4s ease-in-out;
+    }
+
+    #Player-46-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-46 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 4.5s ease-in-out;
+    }
+
+    #Player-47-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-47 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 4.6s ease-in-out;
+    }
+
+    #Player-48-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-48 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 4.7s ease-in-out;
+    }
+
+    #Player-49-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-49 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 4.8s ease-in-out;
+    }
+
+    #Player-50-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-50 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 4.9s ease-in-out;
+    }
+
+    #Player-51-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-51 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 5s ease-in-out;
+    }
+
+    #Player-52-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-52 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 5.1s ease-in-out;
+    }
+
+    #Player-53-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-53 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 5.2s ease-in-out;
+    }
+
+    #Player-54-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-54 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 5.3s ease-in-out;
+    }
+
+    #Player-55-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-55 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 5.4s ease-in-out;
+    }
+
+    #Player-56-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-56 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 5.5s ease-in-out;
+    }
+
+    #Player-57-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-57 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 5.6s ease-in-out;
+    }
+
+    #Player-58-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-58 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 5.7s ease-in-out;
+    }
+
+    #Player-59-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-59 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 5.8s ease-in-out;
+    }
+
+    #Player-60-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-60 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 5.9s ease-in-out;
+    }
+
+    #Player-61-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-61 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 6s ease-in-out;
+    }
+
+    #Player-62-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-62 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 6.1s ease-in-out;
+    }
+
+    #Player-63-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-63 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 4.05s ease-in-out;
+    }
+
+    #Player-64-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-64 {
+        margin-top: 30px;
+        animation: ShowPlayerName 1s forwards 1.55s ease-in-out;
+    }
+
+    #Player-65-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Player-65 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        animation: ShowPlayerName 1s forwards .35s ease-in-out;
+    }
+
+    #line-One {
+        width:300px;
+        height:2px;
+        margin-top: 115px;
+        margin-left: 10px;
+        background:rgb(29, 29, 29);
+        animation: ShowLineOne 1s forwards ease-in-out;
+    }
+
+    @keyframes ShowLineOne {
+        0% {
+            width:300px;
+            border-left: 0px solid rgb(120, 162, 47);
+        }
+
+        100% {
+            width:0px;
+            border-left: 300px solid rgb(120, 162, 47);
+        }
+    }
+
+    #Coaches-Text-Holder {
+        margin-top: 20px;
+        width:100%;
+        height:45px;
+        overflow: hidden;
+    }
+
+    #Coaches-Text {
+        margin-left: 0px;
+        margin-top: 50px;
+        font-size: 45px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        animation: ShowCoachesText .75s forwards ease-in-out;
+    }
+
+    @keyframes ShowCoachName {
+        0% {
+            margin-top: 30px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes ShowCoachesText {
+        0% {
+            margin-top: 50px;
+        }
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    #Coach-1-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Coach-1 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        animation: ShowCoachName 1s forwards ease-in-out;
+    }
+
+    #Coach-2-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Coach-2 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        animation: ShowCoachName 1s forwards .1s ease-in-out;
+    }
+
+    #Coach-3-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Coach-3 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        animation: ShowCoachName 1s forwards .2s ease-in-out;
+    }
+
+    #Coach-4-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Coach-4 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        animation: ShowCoachName 1s forwards .3s ease-in-out;
+    }
+
+    #line-Two {
+        width:300px;
+        height:2px;
+        margin-top: 7px;
+        background:rgb(29, 29, 29);
+        animation: ShowLineTwo 1s forwards .4s ease-in-out;
+    }
+
+    @keyframes ShowLineTwo {
+        0% {
+            width:300px;
+            border-left: 0px solid rgb(120, 162, 47);
+        }
+
+        100% {
+            width:0px;
+            border-left: 300px solid rgb(120, 162, 47);
+        }
+    }
+
+    #change-Pages-Two {
+        width:0px;
+        height:150vh;
+        background:rgb(29, 29, 29);
+        position:fixed;
+        top:0px;
+        left:100%;
+    }
+
+    @keyframes OpenPlayerProfile {
+        0% {
+            left:100%;
+            height:100vh;
+            border-left: 0px solid rgb(120, 162, 47);
+            width:0px;
+        }
+
+        50% {
+            left:0px;
+            height:100vh;
+            border-left: 100vw solid rgb(120, 162, 47);
+            width:0px;
+        }
+
+        100% {
+            width:100vw;
+            height:100vh;
+            left:0px;
+            border-left: 0px solid rgb(120, 162, 47);
+        }
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
