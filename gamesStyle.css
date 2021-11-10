@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@media (max-width:500px) {
+    body {
+        background:rgb(29, 29, 29);
+        margin: 0;
+        padding: 0;
+    }
+    
+    #hole-Background {
+        background:rgb(29, 29, 29);
+        width:100vw;
+    }
+
+    #top-Bar {
+        background:rgb(29, 29, 29);
+        position: fixed;
+        top:0px;
+        height:0px;
+        width:100%;
+    }
+
+    #logo-Hider {
+        width:100%;
+        overflow: hidden;
+        animation: ShowLogo 1s forwards 0s ease-in-out;
+    }
+
+    @keyframes ShowLogo {
+        0% {
+            height:0px;
+        }
+
+        100% {
+            height:50px;
+        }
+    }
+
+    #Logo {
+        height:40px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    
+    #menu-Image {
+        width:34px;
+        height:34px;
+        position:absolute;
+        top:10px;
+        left:calc(100% - 50px);
+    }
+    
+    #menu-Page {
+        width:0vw;
+        height:150vh;
+        background:rgb(29, 29, 29);
+        position:fixed;
+        top:0px;
+        overflow: hidden;
+    }
+
+
+    @keyframes showMenuPage {
+        0% {
+            width: 0vw;
+            border-right: 0vw solid rgb(120, 162, 47);
+        }
+
+        50% {
+            width: 0vw;
+            left:0px;
+            border-right: 100vw solid rgb(120, 162, 47);
+        }
+
+        100% {
+            border-right: 0vw solid rgb(120, 162, 47);
+            width:100vw;
+        }
+    }
+
+    @keyframes closeMenuPage {
+        0% {
+            border-right: 0vw solid rgb(120, 162, 47);
+            width:100vw;
+        }
+
+        50% {
+            width: 0vw;
+            left:0px;
+            border-right: 100vw solid rgb(120, 162, 47);
+        }
+
+        100% {
+            width: 0vw;
+            border-right: 0vw solid rgb(120, 162, 47);
+        }
+    }
+
+    #close-Menu-Page {
+        color:white;
+        font-size: 50px;
+        transform: rotate(45deg);
+        position:absolute;
+        top:0px;
+        left:calc(100% - 50px);
+    }
+
+    #Players-Button-Holder {
+        width:100%;
+        height:50px;
+        text-align: center;
+        overflow: hidden;
+        position:relative;
+        margin-top: 50px;
+    }
+
+    #Players-Button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    @keyframes showPlayersButton {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes closePlayersButton {
+        0% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+
+    #Games-Button-Holder {
+        width:100%;
+        height:50px;
+        text-align: center;
+        overflow: hidden;
+        position:relative;
+        margin-top: 50px;
+    }
+
+    #Games-Button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    @keyframes showGamesButton {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes closeGamesButton {
+        0% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+    #Home-Button-Holder {
+        width:100%;
+        height:50px;
+        text-align: center;
+        overflow: hidden;
+        position:relative;
+        margin-top: 50px;
+    }
+
+    #Home-Button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    @keyframes showHomeButton {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes closeHomeButton {
+        0% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+    #Coaches-Button-Holder {
+        width:100%;
+        height:50px;
+        text-align: center;
+        overflow: hidden;
+        position:relative;
+        margin-top: 50px;
+    }
+
+    #Coaches-Button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    @keyframes showCoachesButton {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes closeCoachesButton {
+        0% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+    #instagram-Image-Holder {
+        position:relative;
+        height:60px;
+        width:100%;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+
+    #instagram-Image {
+        position:absolute;
+        width:60px;
+        top:calc(100% - 32px);
+        left:calc(50% - 30px);
+        margin-top: 60px;
+    }
+
+    @keyframes ShowInstagramLogo {
+        0% {
+            margin-top: 60px;
+        }
+        100% {
+            margin-top: -22px;
+        }
+    }
+
+    @keyframes closeInstagramLogo {
+        0% {
+            margin-top: -22px;
+        }
+
+        100% {
+            margin-top: 60px;
+        }
+    }
+
+    #change-Pages {
+        width:100vw;
+        height:0vh;
+        position:absolute;
+        top:0px;
+        background:rgb(29, 29, 29);
+    }
+
+    @keyframes openPage {
+        0% {
+            height: 0vh;
+            border-bottom: 0vh solid rgb(120, 162, 47);
+        }
+
+        50% {
+            height: 0vh;
+            left:0px;
+            border-bottom: 100vh solid rgb(120, 162, 47);
+        }
+
+        100% {
+            border-bottom: 0vh solid rgb(120, 162, 47);
+            height:100vw;
+        }
+    }
+
+    #Games-Played-Holder {
+        width:100%;
+        height:30px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        position:relative;
+        overflow: hidden;
+    }
+
+    #Games-Played {
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 40px;
+        font-size: 25px;
+        color:white;
+        margin-left: 10px;
+        animation: showGamesPlayed 1s forwards ease-in-out;
+    }
+
+    @keyframes showGamesPlayed {
+        0% {
+            margin-top: 40px;
+        }
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    #Games-Played-Container {
+        width:100%;
+        margin-top: 60px;
+    }
+
+    #Game-One-Played-Holder {
+        width:0vw;
+        height:100px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        background:rgb(14, 14, 14);
+        position:relative;
+        overflow: hidden;
+        animation: showGameOne 1s forwards ease-in-out;
+    }
+
+    @keyframes showGameOne {
+        0% {
+            width:0px;
+            border-left: 0px solid rgb(120, 162, 47);
+        }
+        49% {
+            border-left: 95vw solid rgb(120, 162, 47);
+            border-right: 0px solid rgb(120, 162, 47);
+        }
+        50% {
+            border-left: 0px solid rgb(120, 162, 47);
+            border-right: 95vw solid rgb(120, 162, 47);
+            width:0px;
+        }
+        100% {
+            width:95vw;
+            border-right: 0px solid rgb(120, 162, 47);
+        }
+    }
+
+    #Hide-Game-One-Players {
+        width:100%;
+        height:30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #Game-One-Players {
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 30px;
+        font-size: 22px;
+        font-weight: 600;
+        color:rgb(0, 0, 0);
+        margin-left: 0px;
+        text-align: center;
+        animation: ShowPlayersGameOne .75s forwards 1s ease-in-out;
+    }
+
+    @keyframes ShowPlayersGameOne {
+        0% {
+            margin-top: 40px;
+        }
+
+        100% {
+            margin-top: 5px;
+        }
+    }
+
+    #hide-Game-One-Score {
+        width:100%;
+        margin-left: 0px;
+        height:17px;
+        position:absolute;
+        overflow: hidden;
+    }
+
+    #game-One-Score {
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 30px;
+        font-size: 17px;
+        font-weight: 600;
+        color:rgb(0, 0, 0);
+        margin-left: 0px;
+        text-align: center;
+        animation: showGameOneScore 1s forwards 1s ease-in-out;
+    }
+
+    @keyframes showGameOneScore {
+        0% {
+            margin-top: 30px;
+        }
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    #Game-One-Image {
+        width:95vw;
+        position:absolute;
+    }
+
+    #Game-Two-Played-Holder {
+        width:0vw;
+        height:100px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        background:rgb(14, 14, 14);
+        position:relative;
+        overflow: hidden;
+        animation: showGameTwo 1s forwards .25s ease-in-out;
+    }
+
+    @keyframes showGameTwo {
+        0% {
+            width:0px;
+            border-left: 0px solid rgb(120, 162, 47);
+        }
+        49% {
+            border-left: 95vw solid rgb(120, 162, 47);
+            border-right: 0px solid rgb(120, 162, 47);
+        }
+        50% {
+            border-left: 0px solid rgb(120, 162, 47);
+            border-right: 95vw solid rgb(120, 162, 47);
+            width:0px;
+        }
+        100% {
+            width:95vw;
+            border-right: 0px solid rgb(120, 162, 47);
+        }
+    }
+
+    #Hide-Game-Two-Players {
+        width:100%;
+        height:30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #Game-Two-Players {
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 30px;
+        font-size: 22px;
+        font-weight: 600;
+        color:rgb(0, 0, 0);
+        margin-left: 0px;
+        text-align: center;
+        animation: ShowPlayersGameTwo .75s forwards 1.25s ease-in-out;
+    }
+
+    @keyframes ShowPlayersGameTwo {
+        0% {
+            margin-top: 40px;
+        }
+
+        100% {
+            margin-top: 5px;
+        }
+    }
+
+    #hide-Game-Two-Score {
+        width:100%;
+        margin-left: 0px;
+        height:17px;
+        position:absolute;
+        overflow: hidden;
+    }
+
+    #game-Two-Score {
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 30px;
+        font-size: 17px;
+        font-weight: 600;
+        color:rgb(0, 0, 0);
+        margin-left: 0px;
+        text-align: center;
+        animation: showGameTwoScore 1s forwards 1.35s ease-in-out;
+    }
+
+    @keyframes showGameTwoScore {
+        0% {
+            margin-top: 30px;
+        }
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    #Game-Two-Image {
+        width:95vw;
+        position:absolute;
+        top:-50px;
+    }
+
+    #change-Pages-Two {
+        width:0px;
+        height:100vh;
+        position:fixed;
+        background: rgb(29, 29, 29);
+        left:100vw;
+        top:0px;
+    }
+
+    @keyframes OpenWTCSABBYPARK {
+        0% {
+            left:100vw;
+            width:0px;
+            border-left: 0px solid rgb(120, 162, 47);
+        }
+
+        50% {
+            left: 0px;
+            width:0px;
+            border-left: 100vw solid rgb(120, 162, 47);
+        }
+
+        100% {
+            left:0px;
+            width:100vw;
+            border-left: 0px solid rgb(120, 162, 47);
+        }
+    }
+
+    .View-Game-Images {
+        width:50px;
+        position:absolute;
+        transform: rotate(180deg);
+        top:calc(50% - 25px);
+        left:calc(100% - 50px);
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

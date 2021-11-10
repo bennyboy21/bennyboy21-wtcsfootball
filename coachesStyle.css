@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+@media (max-width:500px) {
+    body {
+        background:rgb(29, 29, 29);
+        margin: 0;
+        padding: 0;
+    }
+    
+    #hole-Background {
+        background:rgb(29, 29, 29);
+        width:100vw;
+    }
+
+    #top-Bar {
+        background:none;
+        position: fixed;
+        top:0px;
+        height:50px;
+        width:100%;
+        transition: .5s;
+    }
+
+    #top-Bar.fadeTopBar {
+        background:rgb(20, 20, 20);
+        transition: .5s;
+    }
+
+    #trigger1 {
+        position:absolute;
+        top:52%;
+    }
+
+    #logo-Hider {
+        width:100%;
+        overflow: hidden;
+        animation: ShowLogo 1s forwards 0s ease-in-out;
+    }
+
+    @keyframes ShowLogo {
+        0% {
+            height:0px;
+        }
+
+        100% {
+            height:50px;
+        }
+    }
+
+    #Logo {
+        height:40px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    
+    #menu-Image {
+        width:34px;
+        height:34px;
+        position:absolute;
+        top:10px;
+        left:calc(100% - 60px);
+    }
+    
+    #menu-Page {
+        width:0vw;
+        height:150vh;
+        background:rgb(29, 29, 29);
+        position:fixed;
+        top:0px;
+        overflow: hidden;
+    }
+
+
+    @keyframes showMenuPage {
+        0% {
+            width: 0vw;
+            border-right: 0vw solid rgb(120, 162, 47);
+        }
+
+        50% {
+            width: 0vw;
+            left:0px;
+            border-right: 100vw solid rgb(120, 162, 47);
+        }
+
+        100% {
+            border-right: 0vw solid rgb(120, 162, 47);
+            width:100vw;
+        }
+    }
+
+    @keyframes closeMenuPage {
+        0% {
+            border-right: 0vw solid rgb(120, 162, 47);
+            width:100vw;
+        }
+
+        50% {
+            width: 0vw;
+            left:0px;
+            border-right: 100vw solid rgb(120, 162, 47);
+        }
+
+        100% {
+            width: 0vw;
+            border-right: 0vw solid rgb(120, 162, 47);
+        }
+    }
+
+    #close-Menu-Page {
+        color:white;
+        font-size: 50px;
+        transform: rotate(45deg);
+        position:absolute;
+        top:0px;
+        left:calc(100% - 50px);
+    }
+
+    #Players-Button-Holder {
+        width:100%;
+        height:50px;
+        text-align: center;
+        overflow: hidden;
+        position:relative;
+        margin-top: 50px;
+    }
+
+    #Players-Button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    @keyframes showPlayersButton {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes closePlayersButton {
+        0% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+
+    #Games-Button-Holder {
+        width:100%;
+        height:50px;
+        text-align: center;
+        overflow: hidden;
+        position:relative;
+        margin-top: 50px;
+    }
+
+    #Games-Button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    @keyframes showGamesButton {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes closeGamesButton {
+        0% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+    #Home-Button-Holder {
+        width:100%;
+        height:50px;
+        text-align: center;
+        overflow: hidden;
+        position:relative;
+        margin-top: 50px;
+    }
+
+    #Home-Button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    @keyframes showHomeButton {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes closeHomeButton {
+        0% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+    #Coaches-Button-Holder {
+        width:100%;
+        height:50px;
+        text-align: center;
+        overflow: hidden;
+        position:relative;
+        margin-top: 50px;
+    }
+
+    #Coaches-Button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    @keyframes showCoachesButton {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes closeCoachesButton {
+        0% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+    #instagram-Image-Holder {
+        position:relative;
+        height:60px;
+        width:100%;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+
+    #instagram-Image {
+        position:absolute;
+        width:60px;
+        top:calc(100% - 32px);
+        left:calc(50% - 30px);
+        margin-top: 60px;
+    }
+
+    @keyframes ShowInstagramLogo {
+        0% {
+            margin-top: 60px;
+        }
+        100% {
+            margin-top: -22px;
+        }
+    }
+
+    @keyframes closeInstagramLogo {
+        0% {
+            margin-top: -22px;
+        }
+
+        100% {
+            margin-top: 60px;
+        }
+    }
+
+    #change-Pages {
+        width:100vw;
+        height:0vh;
+        position:absolute;
+        top:0px;
+        background:rgb(29, 29, 29);
+    }
+
+    @keyframes openPage {
+        0% {
+            height: 0vh;
+            border-bottom: 0vh solid rgb(120, 162, 47);
+        }
+
+        50% {
+            height: 0vh;
+            left:0px;
+            border-bottom: 100vh solid rgb(120, 162, 47);
+        }
+
+        100% {
+            border-bottom: 0vh solid rgb(120, 162, 47);
+            height:100vw;
+        }
+    }
+
+    #Coaches {
+        font-family: 'Dongle', sans-serif;
+        font-size: 30px;
+        margin-top: 50px;
+        color: white;
+    }
+
+    #Coaches-Text-Holder {
+        margin-top: 20px;
+        margin-left: 10px;
+        width:100%;
+        height:45px;
+        overflow: hidden;
+    }
+
+    #Coaches-Text {
+        margin-left: 0px;
+        margin-top: 50px;
+        font-size: 45px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        animation: ShowCoachesText .75s forwards ease-in-out;
+    }
+
+    @keyframes ShowCoachName {
+        0% {
+            margin-top: 30px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes ShowCoachesText {
+        0% {
+            margin-top: 50px;
+        }
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    #Coach-1-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Coach-1 {
+        margin-top: 30px;
+        margin-left: 10px;
+        animation: ShowCoachName 1s forwards ease-in-out;
+    }
+
+    #Coach-2-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Coach-2 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        animation: ShowCoachName 1s forwards .1s ease-in-out;
+    }
+
+    #Coach-3-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Coach-3 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        animation: ShowCoachName 1s forwards .2s ease-in-out;
+    }
+
+    #Coach-4-Holder {
+        width:300px;
+        height:30px;
+        overflow: hidden;
+    }
+
+    #Coach-4 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        animation: ShowCoachName 1s forwards .3s ease-in-out;
+    }
+
+    #line-Two {
+        width:300px;
+        height:2px;
+        margin-top: 7px;
+        margin-left: 10px;
+        background:rgb(29, 29, 29);
+        animation: ShowLineTwo 1s forwards .4s ease-in-out;
+    }
+
+    @keyframes ShowLineTwo {
+        0% {
+            width:300px;
+            border-left: 0px solid rgb(120, 162, 47);
+        }
+
+        100% {
+            width:0px;
+            border-left: 300px solid rgb(120, 162, 47);
+        }
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
